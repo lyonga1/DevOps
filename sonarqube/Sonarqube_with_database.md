@@ -20,6 +20,12 @@ SonarQube is an open-source static testing analysis software, it is used by deve
   sudo apt-get update
   sudo apt-get -y install postgresql
   ```
+systemctl status postgresql
+cat /etc/passwd (to see user created by postgresql)
+user created is postgres
+set passwd for: postgres
+passwd postgres
+sudo 
 
 1. Set a password and connect to database (setting password as "admin" password)
   ```sh 
@@ -38,7 +44,7 @@ SonarQube is an open-source static testing analysis software, it is used by deve
 
 1. Restart postgres database to take latest changes effect 
   ```sh 
-  systemctl restart postgresql 
+  systemctl restart postgresql (as a root user, exit db (^c, exit)
   systemctl status postgresql
   ```
 `check point`: You should see postgres is running on 5432
